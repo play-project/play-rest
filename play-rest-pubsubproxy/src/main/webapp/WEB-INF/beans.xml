@@ -30,7 +30,7 @@
 		<property name="serializeAsArray" value="true" />
 	</bean>
 
-	<bean id="pubsub" class="org.ow2.play.rest.proxy.api.PubSubService">
+	<bean id="pubsub" class="org.ow2.play.rest.proxy.PubSubService">
 		<!-- Local registry for now... -->
 		<property name="registry"
 			value="http://localhost:8080/registry/RegistryService" />
