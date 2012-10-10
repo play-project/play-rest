@@ -93,10 +93,33 @@ public class PubSubTest extends TestCase {
 
 				@Override
 				@WebMethod
-				public void createTopic(Topic arg0)
+				public String createTopic(Topic arg0)
+						throws GovernanceExeption {
+					return null;
+				}
+
+				@Override
+				@WebMethod
+				public boolean deleteTopic(Topic arg0)
 						throws GovernanceExeption {
 					// TODO Auto-generated method stub
+					return false;
+				}
 
+				@Override
+				@WebMethod
+				public String createPublisherTopic(Topic arg0)
+						throws GovernanceExeption {
+					// TODO Auto-generated method stub
+					return null;
+				}
+
+				@Override
+				@WebMethod
+				public String createSubscriberTopic(Topic arg0)
+						throws GovernanceExeption {
+					// TODO Auto-generated method stub
+					return null;
 				}
 			});
 		
